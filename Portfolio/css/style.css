@@ -1,0 +1,102 @@
+:root {
+  /* Color */
+  --CLR-White: #fff;
+  --CLR-White-40T: hsla(0, 0%, 100%, 0.4);
+  /*  */
+  --CLR-Primary-1: #fffaeb;
+  --CLR-Primary-2: #fceec5;
+  --CLR-Primary-3: #f9da8b;
+  --CLR-Primary-4: #e9b949;
+  --CLR-Primary-4: hsla(42, 78%, 60%, 0.8);
+  --CLR-Primary-5: #513c06;
+  /*  */
+  --CLR-Gray-1: #f1f5f8;
+  --CLR-Gray-1: #617d98;
+  --CLR-Gray-1: #102a42;
+  --CLR-Gray-1: #222222;
+  /*  */
+  --CLR-Black: #000;
+
+  /* Border Widths */
+  --border-small: 2px;
+  --border-normal: 4px;
+
+  /* Shadows */
+  --light-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+  --dark-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
+  --button-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+
+  /* Border Radii */
+  --BR-small: 0.8rem;
+  --BR-normal: 1.6rem;
+  --BR-large: 3.2rem;
+  --BR-pill-circle: 1000px;
+
+  /* Containers */
+  --main-container: 120rem;
+
+  /* ============ */
+  /* === Font === */
+  /* ============ */
+  /* Families */
+  --FF-heading:"Roboto"
+  --FF-body:"Open Sans"
+  /* Sizes */
+  --FS-x-small: 1.4rem;
+  --FS-small: 1.6rem;
+  --FS-normal: 2rem;
+  --FS-medium: 2.4rem;
+  --FS-large: 3.2rem;
+  --FS-x-large: 4rem;
+  --FS-xx-large: 4.8rem;
+  --FS-xxx-large: 6.4rem;
+  /* Styles */
+  --FW-bold:700;
+  --FW-regular:400;
+  /* Line-Heights */
+  --LH-normal: 1;
+  --LH-large: 1.6;
+
+  /* Letter-Spacing */
+  --LS-normal: 0;
+  --LS-normal: 4px;
+
+  /* ============ */
+  /* = Spacing = */
+  /* ============ */
+  --SP-xx-small: 0.8rem;
+  --SP-x-small: 1.6rem;
+  --SP-small: 2.4rem;
+  --SP-normal: 3.2rem;
+  --SP-medium: 4rem;
+  --SP-large: 4.8rem;
+  --SP-xx-large: 6.4rem;
+  --SP-x-large: 8rem;
+}
+
+*,
+::after,
+::before {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+}
+
+img {
+  max-width: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
