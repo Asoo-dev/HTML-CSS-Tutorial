@@ -203,6 +203,10 @@ a {
   margin-bottom: var(--SP-xx-small);
 }
 
+.mb-x-small {
+  margin-bottom: var(--SP-x-small);
+}
+
 .mb-small {
   margin-bottom: var(--SP-small);
 }
@@ -518,5 +522,66 @@ a {
   background-color: var(--CLR-Primary-4);
   border-radius: var(--BR-pill-circle);
 }
-
 /* Skills End */
+
+/* Timeline */
+
+.timeline .h2 {
+  text-align: center;
+}
+
+.time-point {
+  padding: var(--SP-x-large) 0;
+  position: relative;
+}
+
+.time-point.right {
+  padding-right: var(--SP-normal);
+  margin-left: var(--SP-normal);
+  border-top: var(--border-small) dashed var(--CLR-Primary-4);
+  border-right: var(--border-small) dashed var(--CLR-Primary-4);
+  border-radius: 0 var(--BR-large) var(--BR-large) 0;
+}
+
+.time-point.left {
+  margin-right: var(--SP-normal);
+  padding-left: var(--SP-normal);
+  border-top: var(--border-small) dashed var(--CLR-Primary-4);
+  border-left: var(--border-small) dashed var(--CLR-Primary-4);
+  border-radius: var(--BR-large) 0 0 var(--BR-large);
+}
+
+.time-point.first {
+  border-top: none;
+  border-top-right-radius: 0;
+}
+
+.time-point.last {
+  border-bottom-left-radius: 0;
+}
+
+.index {
+  height: 3.2rem;
+  width: 3.2rem;
+  background-color: var(--CLR-Primary-4);
+  color: var(--CLR-Primary-5);
+  border-radius: var(--BR-pill-circle);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  line-height: var(--LH-normal);
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.right .index {
+  right: 0;
+  transform: translateX(50%);
+}
+
+.left .index {
+  left: 0;
+  transform: translateX(-50%);
+}
+/* Timeline End */
