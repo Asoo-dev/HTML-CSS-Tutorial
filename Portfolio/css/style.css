@@ -594,6 +594,64 @@ a {
 
 /* Blog End */
 
+.blog .h2 {
+  text-align: center;
+}
+
+.blog-posts.grid {
+  gap: var(--SP-small);
+}
+
+.post {
+  background-color: var(--CLR-White);
+  border-radius: var(--BR-normal);
+  overflow: hidden;
+}
+
+.post-img {
+  height: 20rem;
+  margin-bottom: var(--SP-x-small);
+}
+
+.post-img img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  object-position: center center;
+}
+
+.post-content {
+  padding: 0 var(--SP-small) var(--SP-normal);
+}
+
+.post-details {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.post-content > p {
+  margin-bottom: var(--SP-x-small);
+}
+
+.profile-img {
+  height: 3.2rem;
+  width: 3.2rem;
+  border-radius: var(--BR-pill-circle);
+  overflow: hidden;
+}
+
+.profile-img img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.reading-time {
+  line-height: var(--LH-normal);
+  color: var(--CLR-Primary-4);
+  text-transform: uppercase;
+}
 /* Footer */
 
 .footer {
