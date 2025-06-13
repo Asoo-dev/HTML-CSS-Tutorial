@@ -468,6 +468,32 @@ a {
 
 /* Contact */
 
+.contact {
+  height: 100rem;
+  padding: var(--SP-xx-large) 0;
+  background: linear-gradient(var(--CLR-White-40T), var(--CLR-White-40T))
+      content-box,
+    url(../images/project-1.jpeg) content-box;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  clip-path: polygon(50% 10%, 100% 18%, 100% 82%, 50% 90%, 0 82%, 0 18%);
+}
+
+.contact-flex {
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.contact-content {
+  text-align: center;
+  padding: var(--SP-x-large);
+}
+
+.contact-content p {
+  margin-bottom: var(--SP-small);
+}
 /* Contact End */
 
 /* Skills */
@@ -592,8 +618,6 @@ a {
 
 /* Blog */
 
-/* Blog End */
-
 .blog .h2 {
   text-align: center;
 }
@@ -624,14 +648,14 @@ a {
   padding: 0 var(--SP-small) var(--SP-normal);
 }
 
+.post-content > p {
+  margin-bottom: var(--SP-x-small);
+}
+
 .post-details {
   display: flex;
   justify-content: space-between;
   align-items: center;
-}
-
-.post-content > p {
-  margin-bottom: var(--SP-x-small);
 }
 
 .profile-img {
@@ -652,6 +676,9 @@ a {
   color: var(--CLR-Primary-4);
   text-transform: uppercase;
 }
+
+/* Blog End */
+
 /* Footer */
 
 .footer {
