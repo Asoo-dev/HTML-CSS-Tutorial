@@ -34,7 +34,7 @@
 
   /* Containers */
   --main-container: 120rem;
-
+  --secondary-container: 60rem;
   /* ============ */
   /* === Font === */
   /* ============ */
@@ -64,14 +64,15 @@
   /* ============ */
   /* = Spacing = */
   /* ============ */
-  --SP-xx-small: 0.8rem;
+  --SP-xxx-small: 0.8rem;
+  --SP-xx-small: 1.2rem;
   --SP-x-small: 1.6rem;
   --SP-small: 2.4rem;
   --SP-normal: 3.2rem;
   --SP-medium: 4rem;
   --SP-large: 4.8rem;
-  --SP-xx-large: 6.4rem;
-  --SP-x-large: 8rem;
+  --SP-x-large: 6.4rem;
+  --SP-xx-large: 8rem;
 
   /* Transition */
   --transition: all 0.3s ease-out;
@@ -131,6 +132,11 @@ a {
 
 .container {
   max-width: var(--main-container);
+  margin: 0 auto;
+}
+
+.secondary-container {
+  max-width: var(--secondary-container);
   margin: 0 auto;
 }
 
@@ -205,6 +211,10 @@ a {
   margin-bottom: var(--SP-large);
 }
 
+.mb-x-large {
+  margin-bottom: var(--SP-x-large);
+}
+
 .center {
   margin-left: auto;
   margin-right: auto;
@@ -235,7 +245,7 @@ a {
 
 .nav-list {
   display: flex;
-  gap: var(--SP-xx-large);
+  gap: var(--SP-x-large);
 }
 
 .nav-link {
@@ -374,3 +384,72 @@ a {
   background-color: var(--CLR-White);
 }
 /* Services End */
+
+/* Workks */
+
+.works {
+  text-align: center;
+}
+
+.work {
+  border-radius: var(--BR-normal);
+  overflow: hidden;
+  position: relative;
+}
+
+.works-list.grid {
+  gap: var(--SP-x-small);
+  grid-auto-rows: 20rem;
+}
+
+/* height,width 100% to cover */
+.work img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.work:nth-child(1) {
+  grid-row: span 2;
+}
+
+.work:nth-child(2) {
+  grid-column: span 2;
+}
+
+.work-content {
+  position: absolute;
+  inset: 0;
+  background-color: var(--CLR-Primary-4-70T);
+  color: var(--CLR-White);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: var(--SP-xxx-small);
+  opacity: 0;
+  transition: var(--transition);
+}
+
+.work-content::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border: var(--border-small) solid var(--CLR-White);
+  border-radius: var(--BR-normal);
+  transition: var(--transition);
+}
+
+.work-content:hover {
+  opacity: 1;
+}
+
+/* imediatly after hover */
+.work-content:hover.work-content::after {
+  inset: 4rem;
+}
+
+.work-content .h4 {
+  color: var(--CLR-White);
+}
+/* Workks End */
