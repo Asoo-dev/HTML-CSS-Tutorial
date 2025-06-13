@@ -159,6 +159,10 @@ a {
   background-color: var(--CLR-Primary-1);
 }
 
+.bg-primary-2 {
+  background-color: var(--CLR-Primary-2);
+}
+
 .bg-gray-1 {
   background-color: var(--CLR-Gray-1);
 }
@@ -453,3 +457,66 @@ a {
   color: var(--CLR-White);
 }
 /* Workks End */
+
+/* Contact */
+
+/* Contact End */
+
+/* Skills */
+
+.skills {
+  text-align: center;
+}
+
+.skills .grid {
+  gap: var(--SP-large);
+  justify-items: stretch;
+}
+
+.h3 {
+  font-size: var(--FS-medium);
+}
+
+.skills .h3 {
+  color: var(--CLR-Primary-5);
+  margin-bottom: var(--SP-normal);
+  text-align: left;
+}
+
+.skills-list {
+  display: flex;
+  flex-direction: column;
+  gap: var(--SP-normal);
+}
+
+.skill-content {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: var(--SP-xxx-small);
+  width: attr(data-progress type(<percentage>));
+}
+
+.skill-content p {
+  line-height: var(--LH-normal);
+  color: var(--CLR-Primary-5);
+  text-transform: uppercase;
+}
+
+.skill-content p:last-child {
+  transform: translate(1.6rem);
+}
+
+.progress-bar {
+  height: 1.6rem;
+  background-color: var(--CLR-White);
+  border-radius: var(--BR-pill-circle);
+}
+
+.progress {
+  height: 1.6rem;
+  width: attr(data-progress type(<percentage>));
+  background-color: var(--CLR-Primary-4);
+  border-radius: var(--BR-pill-circle);
+}
+
+/* Skills End */
