@@ -90,7 +90,7 @@ html {
 }
 
 body {
-  font-family: var(--FF-body) sans-serif;
+  font-family: var(--FF-body), sans-serif;
   font-size: var(--FS-small);
   font-weight: var(--FW-regular);
   line-height: var(--LH-large);
@@ -176,10 +176,17 @@ a {
   background-color: var(--CLR-Primary-3);
 }
 
-mb-xx-small {
+.mb-xx-small {
   margin-bottom: var(--SP-xx-small);
 }
 
+.mt-xx-small {
+  margin-top: var(--SP-xx-small);
+}
+
+.mb-normal {
+  margin-bottom: var(--SP-normal);
+}
 /*=== Utilities ===*/
 
 /* Navbar */
@@ -259,18 +266,18 @@ mb-xx-small {
   fill: var(--CLR-Primary-4);
 }
 
-.hero-img {
+.bleed-img {
   width: 100%;
   max-width: 32rem;
   position: relative;
   isolation: isolate;
 }
 
-.hero-img img {
+.bleed-img img {
   border-radius: var(--BR-normal);
 }
 
-.hero-img::before {
+.bleed-img::before {
   content: "";
   display: block;
   position: absolute;
@@ -284,3 +291,18 @@ mb-xx-small {
   transform: translate(4rem, 4rem);
 }
 /* Header End */
+
+/* About */
+
+.h2 {
+  font-size: var(--FS-x-large);
+}
+
+.about .bleed-img::before {
+  transform: translate(-4rem, 4rem);
+}
+
+.about-content p {
+  margin-bottom: var(--SP-small);
+}
+/* About End */
