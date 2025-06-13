@@ -153,11 +153,20 @@ a {
   background-color: var(--CLR-Primary-1);
 }
 
+.bg-gray-1 {
+  background-color: var(--CLR-Gray-1);
+}
+
 .dec-line {
   width: 100px;
   height: 4px;
   background-color: var(--CLR-Primary-4);
   border-radius: var(--BR-pill-circle);
+  transition: var(--transition);
+}
+
+.dec-line.small {
+  width: 50px;
 }
 
 .btn:link,
@@ -176,16 +185,29 @@ a {
   background-color: var(--CLR-Primary-3);
 }
 
-.mb-xx-small {
-  margin-bottom: var(--SP-xx-small);
-}
-
 .mt-xx-small {
   margin-top: var(--SP-xx-small);
 }
 
+.mb-xx-small {
+  margin-bottom: var(--SP-xx-small);
+}
+
+.mb-small {
+  margin-bottom: var(--SP-small);
+}
+
 .mb-normal {
   margin-bottom: var(--SP-normal);
+}
+
+.mb-large {
+  margin-bottom: var(--SP-large);
+}
+
+.center {
+  margin-left: auto;
+  margin-right: auto;
 }
 /*=== Utilities ===*/
 
@@ -306,3 +328,49 @@ a {
   margin-bottom: var(--SP-small);
 }
 /* About End */
+
+/* Services */
+
+.services {
+  text-align: center;
+}
+
+.services-list.grid {
+  gap: var(--SP-normal);
+}
+
+.service {
+  background-color: var(--CLR-White);
+  padding: var(--SP-large) var(--SP-small);
+  border-radius: var(--BR-normal);
+  transition: var(--transition);
+}
+
+.service svg {
+  height: 3.2rem;
+  fill: var(--CLR-Gray-3);
+  transition: var(--transition);
+}
+
+.h4 {
+  font-size: var(--FS-small);
+  transition: var(--transition);
+}
+
+.service:hover {
+  background-color: var(--CLR-Primary-4);
+  color: var(--CLR-White);
+}
+
+.service:hover h4 {
+  color: var(--CLR-White);
+}
+
+.service:hover svg {
+  fill: var(--CLR-White);
+}
+
+.service:hover .dec-line {
+  background-color: var(--CLR-White);
+}
+/* Services End */
