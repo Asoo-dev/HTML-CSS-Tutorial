@@ -167,6 +167,10 @@ a {
   background-color: var(--CLR-Gray-1);
 }
 
+.bg-gray-4 {
+  background-color: var(--CLR-Gray-4);
+}
+
 .dec-line {
   width: 100px;
   height: 4px;
@@ -585,3 +589,27 @@ a {
   transform: translateX(-50%);
 }
 /* Timeline End */
+
+/* Blog */
+
+/* Blog End */
+
+/* Footer */
+
+.footer {
+  text-align: center;
+}
+
+.footer .social-list {
+  justify-content: center;
+}
+
+.footer .social-icon {
+  fill: var(--CLR-Primary-4);
+}
+
+.footer .social-icon:hover {
+  fill: var(--CLR-Primary-1);
+}
+
+/* Footer End */
