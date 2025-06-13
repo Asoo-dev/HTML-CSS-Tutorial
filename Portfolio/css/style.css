@@ -39,8 +39,8 @@
   /* === Font === */
   /* ============ */
   /* Families */
-  --FF-heading:"Roboto"
-  --FF-body:"Open Sans"
+  --FF-heading: "Roboto";
+  --FF-body: "Open Sans";
   /* Sizes */
   --FS-x-small: 1.4rem;
   --FS-small: 1.6rem;
@@ -51,8 +51,8 @@
   --FS-xx-large: 4.8rem;
   --FS-xxx-large: 6.4rem;
   /* Styles */
-  --FW-bold:700;
-  --FW-regular:400;
+  --FW-bold: 700;
+  --FW-regular: 400;
   /* Line-Heights */
   --LH-normal: 1;
   --LH-large: 1.6;
@@ -87,6 +87,9 @@ html {
 }
 
 body {
+  font-family: var(--FF-body) sans-serif;
+  font-weight: var(--FW-regular);
+  line-height: var(--LH-large);
 }
 
 img {
@@ -94,9 +97,35 @@ img {
 }
 
 a {
+  display: inline-block;
   text-decoration: none;
 }
 
 li {
   list-style: none;
 }
+
+/*=== Utilities ===*/
+
+.section {
+  padding: var(--SP-xx-large) var(--SP-normal);
+}
+
+.container {
+  max-width: var(--main-container);
+  margin: 0 auto;
+}
+
+.grid {
+  display: grid;
+}
+
+.grid-2-cols {
+  grid-template-columns: 1fr 1fr;
+}
+
+.grid-3-cols {
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+/*=== Utilities ===*/
