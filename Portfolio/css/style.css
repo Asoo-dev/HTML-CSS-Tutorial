@@ -97,7 +97,7 @@ img {
 }
 
 a {
-  display: inline-block;
+  display: block;
   text-decoration: none;
 }
 
@@ -129,3 +129,15 @@ li {
 }
 
 /*=== Utilities ===*/
+
+/* Header */
+
+.nav-flex{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+
+/* Header End */

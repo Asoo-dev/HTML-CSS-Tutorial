@@ -17,10 +17,10 @@
     <title>John Doe - Portfolio</title>
   </head>
   <body>
-    <nav class="nav">
-      <div class="container">
+    <nav class="section">
+      <div class="container nav-flex">
         <a href="#"><img src="images/logo.svg" class="logo" /></a>
-        <ul class="navlist">
+        <ul class="nav-list">
           <li><a href="#">Home</a></li>
           <li><a href="#">About</a></li>
           <li><a href="#">Projects</a></li>
@@ -144,170 +144,482 @@
       </div>
     </header>
 
-    <section class="section">
-      <div class="container grid grid-2-cols">
-        <img src="images/about-img.jpeg" />
-        <article class="about-content">
-          <h2 class="h2">about</h2>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero quae,
-            eum maiores est enim earum fugiat aspernatur. Fuga qui iste amet
-            reiciendis possimus rerum omnis recusandae molestias error
-            consequuntur, doloribus inventore reprehenderit officiis. Dolore
-            aut, repellendus eius fugiat numquam cumque.
-          </p>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero quae,
-            eum maiores est enim earum fugiat aspernatur. Fuga qui iste amet
-            reiciendis possimus rerum omnis recusandae molestias error
-            consequuntur, doloribus inventore reprehenderit officiis. Dolore
-            aut, repellendus eius fugiat numquam cumque.
-          </p>
-          <div class="btn">about me</div>
-        </article>
-      </div>
-    </section>
-
-    <section class="ssction">
-      <div class="container">
-        <h2 class="h2">services</h2>
-        <div class="dec-line"></div>
-        <ul class="services-list grid grid-3-cols">
-          <li class="service">
-            <svg
-              width="30"
-              height="24"
-              viewBox="0 0 30 24"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <g clip-path="url(#clip0_22_249)">
-                <path
-                  d="M18.4125 0.0563457C17.6157 -0.173342 16.786 0.290721 16.5563 1.0876L10.5563 22.0876C10.3266 22.8845 10.7907 23.7142 11.5875 23.9438C12.3844 24.1735 13.2141 23.7095 13.4438 22.9126L19.4438 1.9126C19.6735 1.11572 19.2094 0.286033 18.4125 0.0563457ZM22.1907 5.68603C21.6047 6.27197 21.6047 7.22353 22.1907 7.80947L26.3766 12.0001L22.186 16.1907C21.6 16.7767 21.6 17.7282 22.186 18.3142C22.7719 18.9001 23.7235 18.9001 24.3094 18.3142L29.5594 13.0642C30.1454 12.4782 30.1454 11.5267 29.5594 10.9407L24.3094 5.69072C23.7235 5.10478 22.7719 5.10478 22.186 5.69072L22.1907 5.68603ZM7.81411 5.68603C7.22817 5.1001 6.27661 5.1001 5.69067 5.68603L0.440674 10.936C-0.145264 11.522 -0.145264 12.4735 0.440674 13.0595L5.69067 18.3095C6.27661 18.8954 7.22817 18.8954 7.81411 18.3095C8.40005 17.7235 8.40005 16.772 7.81411 16.186L3.62349 12.0001L7.81411 7.80947C8.40005 7.22353 8.40005 6.27197 7.81411 5.68603Z"
-                  fill="black"
-                />
-              </g>
-              <defs>
-                <clipPath id="clip0_22_249">
-                  <rect width="30" height="24" fill="white" />
-                </clipPath>
-              </defs>
-            </svg>
-            <h4 class="h4">web development</h4>
-            <div class="dec-line"></div>
+    <main>
+      <section class="section">
+        <div class="container grid grid-2-cols">
+          <img src="images/about-img.jpeg" />
+          <article class="about-content">
+            <h2 class="h2">about</h2>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Voluptates corrupti animi saepe quasi excepturi cupiditate
-              voluptate dolor sed obcaecati vero.
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero
+              quae, eum maiores est enim earum fugiat aspernatur. Fuga qui iste
+              amet reiciendis possimus rerum omnis recusandae molestias error
+              consequuntur, doloribus inventore reprehenderit officiis. Dolore
+              aut, repellendus eius fugiat numquam cumque.
             </p>
-          </li>
-          <li class="service">
-            <svg
-              width="27"
-              height="24"
-              viewBox="0 0 27 24"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M19.7156 14.1516C19.4931 14.1516 19.2756 14.0856 19.0906 13.962C18.9056 13.8384 18.7614 13.6627 18.6763 13.4571C18.5911 13.2516 18.5688 13.0254 18.6122 12.8071C18.6556 12.5889 18.7628 12.3885 18.9201 12.2311C19.0775 12.0738 19.2779 11.9666 19.4961 11.9232C19.7144 11.8798 19.9406 11.9021 20.1461 11.9873C20.3517 12.0724 20.5274 12.2166 20.651 12.4016C20.7746 12.5866 20.8406 12.8041 20.8406 13.0266C20.8406 13.325 20.7221 13.6111 20.5111 13.8221C20.3001 14.0331 20.014 14.1516 19.7156 14.1516ZM7.28906 14.1516C7.06656 14.1516 6.84905 14.0856 6.66405 13.962C6.47904 13.8384 6.33485 13.6627 6.2497 13.4571C6.16455 13.2516 6.14227 13.0254 6.18568 12.8071C6.22909 12.5889 6.33623 12.3885 6.49357 12.2311C6.6509 12.0738 6.85136 11.9666 7.06959 11.9232C7.28781 11.8798 7.51401 11.9021 7.71958 11.9873C7.92515 12.0724 8.10085 12.2166 8.22447 12.4016C8.34808 12.5866 8.41406 12.8041 8.41406 13.0266C8.41406 13.325 8.29554 13.6111 8.08456 13.8221C7.87358 14.0331 7.58743 14.1516 7.28906 14.1516ZM20.1188 7.37818L22.3641 3.48756C22.398 3.4342 22.4208 3.37454 22.431 3.31216C22.4413 3.24978 22.4388 3.18597 22.4238 3.12456C22.4087 3.06316 22.3814 3.00543 22.3435 2.95485C22.3056 2.90428 22.2578 2.86189 22.2031 2.83026C22.1483 2.79862 22.0878 2.77838 22.025 2.77075C21.9622 2.76313 21.8986 2.76828 21.8379 2.7859C21.7772 2.80351 21.7206 2.83322 21.6717 2.87325C21.6228 2.91328 21.5824 2.96279 21.5531 3.01881L19.2797 6.96099C17.4619 6.14572 15.4922 5.72424 13.5 5.72424C11.5078 5.72424 9.53808 6.14572 7.72031 6.96099L5.44687 3.02349C5.41757 2.96748 5.37724 2.91796 5.3283 2.87794C5.27937 2.83791 5.22284 2.8082 5.16213 2.79058C5.10141 2.77297 5.03776 2.76782 4.975 2.77544C4.91224 2.78307 4.85167 2.8033 4.79694 2.83494C4.74221 2.86658 4.69444 2.90896 4.65651 2.95954C4.61858 3.01012 4.59127 3.06785 4.57623 3.12925C4.56119 3.19066 4.55873 3.25447 4.56899 3.31685C4.57925 3.37923 4.60202 3.43889 4.63594 3.49224L6.88125 7.38287C3.02344 9.47818 0.384375 13.3876 0 18.0001H27C26.6156 13.3829 23.9766 9.47818 20.1141 7.37818"
-                fill="black"
-              />
-            </svg>
-            <h4 class="h4">web design</h4>
-            <div class="dec-line"></div>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Voluptates corrupti animi saepe quasi excepturi cupiditate
-              voluptate dolor sed obcaecati vero.
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero
+              quae, eum maiores est enim earum fugiat aspernatur. Fuga qui iste
+              amet reiciendis possimus rerum omnis recusandae molestias error
+              consequuntur, doloribus inventore reprehenderit officiis. Dolore
+              aut, repellendus eius fugiat numquam cumque.
             </p>
-          </li>
-          <li class="service">
-            <svg
-              width="24"
-              height="24"
-              viewBox="0 0 24 24"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <g clip-path="url(#clip0_22_247)">
-                <path
-                  d="M5.47033 1.58437C5.68127 1.29844 6.01877 1.125 6.37502 1.125H17.625C17.9813 1.125 18.3188 1.29375 18.5297 1.58437L23.7797 8.70938C24.0985 9.14062 24.0656 9.73594 23.7094 10.1344L12.8344 22.1344C12.6235 22.3688 12.3188 22.5047 12 22.5047C11.6813 22.5047 11.3813 22.3688 11.1656 22.1344L0.290642 10.1344C-0.070295 9.73594 -0.09842 9.14062 0.22033 8.70938L5.47033 1.58437ZM7.27502 3.45C7.12033 3.56719 7.07814 3.77812 7.17658 3.94219L9.86721 8.42344L2.96721 9C2.77502 9.01406 2.62502 9.17813 2.62502 9.375C2.62502 9.57187 2.77502 9.73125 2.96721 9.75L11.9672 10.5C11.986 10.5 12.0094 10.5 12.0281 10.5L21.0281 9.75C21.2203 9.73594 21.3703 9.57187 21.3703 9.375C21.3703 9.17813 21.2203 9.01875 21.0281 9L14.1328 8.42813L16.8235 3.94687C16.9219 3.78281 16.8797 3.56719 16.725 3.45469C16.5703 3.34219 16.3547 3.36094 16.2235 3.50156L12 8.07187L7.77658 3.49687C7.64533 3.35625 7.42971 3.3375 7.27502 3.45Z"
-                  fill="black"
-                />
-              </g>
-              <defs>
-                <clipPath id="clip0_22_247">
-                  <rect width="24" height="24" fill="white" />
-                </clipPath>
-              </defs>
-            </svg>
-            <h4 class="h4">app design</h4>
-            <div class="dec-line"></div>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Voluptates corrupti animi saepe quasi excepturi cupiditate
-              voluptate dolor sed obcaecati vero.
-            </p>
-          </li>
-        </ul>
-      </div>
-    </section>
-
-    <section class="section">
-      <div class="container">
-        <h2 class="h2"></h2>
-        <div class="dec-line"></div>
-        <p></p>
-        <ul class="work-list">
-          <li>
-            <img src="images/project-1.jpeg" />
-            <div class="work-content">
-              <h4 class="h4">project title</h4>
-              <p>client name</p>
-            </div>
-          </li>
-          <li>
-            <img src="images/project-2.jpeg" />
-            <div class="work-content">
-              <h4 class="h4">project title</h4>
-              <p>client name</p>
-            </div>
-          </li>
-          <li>
-            <img src="images/project-3.jpeg" />
-            <div class="work-content">
-              <h4 class="h4">project title</h4>
-              <p>client name</p>
-            </div>
-          </li>
-          <li>
-            <img src="images/project-4.jpeg" />
-            <div class="work-content">
-              <h4 class="h4">project title</h4>
-              <p>client name</p>
-            </div>
-          </li>
-        </ul>
-      </div>
-    </section>
-
-    <section class="section">
-      <div class="container">
-        <div class="img-container"></div>
-        <div class="contact">
-          <h2 class="h2">let's get in touch</h2>
-          <div class="dec-line"></div>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni
-            ratione perferendis exercitationem sit. Beatae eius commodi officiis
-            rem soluta ratione dignissimos quisquam tempore laudantium, porro
-            vitae cupiditate dicta magni quas corrupti aperiam, rerum minus odio
-            totam repellendus delectus nostrum veniam!
-          </p>
-          <a href="#" class="btn">contact me</a>
+            <div class="btn">about me</div>
+          </article>
         </div>
+      </section>
+
+      <section class="ssction">
+        <div class="container">
+          <h2 class="h2">services</h2>
+          <div class="dec-line"></div>
+          <ul class="services-list grid grid-3-cols">
+            <li class="service">
+              <svg
+                width="30"
+                height="24"
+                viewBox="0 0 30 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <g clip-path="url(#clip0_22_249)">
+                  <path
+                    d="M18.4125 0.0563457C17.6157 -0.173342 16.786 0.290721 16.5563 1.0876L10.5563 22.0876C10.3266 22.8845 10.7907 23.7142 11.5875 23.9438C12.3844 24.1735 13.2141 23.7095 13.4438 22.9126L19.4438 1.9126C19.6735 1.11572 19.2094 0.286033 18.4125 0.0563457ZM22.1907 5.68603C21.6047 6.27197 21.6047 7.22353 22.1907 7.80947L26.3766 12.0001L22.186 16.1907C21.6 16.7767 21.6 17.7282 22.186 18.3142C22.7719 18.9001 23.7235 18.9001 24.3094 18.3142L29.5594 13.0642C30.1454 12.4782 30.1454 11.5267 29.5594 10.9407L24.3094 5.69072C23.7235 5.10478 22.7719 5.10478 22.186 5.69072L22.1907 5.68603ZM7.81411 5.68603C7.22817 5.1001 6.27661 5.1001 5.69067 5.68603L0.440674 10.936C-0.145264 11.522 -0.145264 12.4735 0.440674 13.0595L5.69067 18.3095C6.27661 18.8954 7.22817 18.8954 7.81411 18.3095C8.40005 17.7235 8.40005 16.772 7.81411 16.186L3.62349 12.0001L7.81411 7.80947C8.40005 7.22353 8.40005 6.27197 7.81411 5.68603Z"
+                    fill="black"
+                  />
+                </g>
+                <defs>
+                  <clipPath id="clip0_22_249">
+                    <rect width="30" height="24" fill="white" />
+                  </clipPath>
+                </defs>
+              </svg>
+              <h4 class="h4">web development</h4>
+              <div class="dec-line"></div>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Voluptates corrupti animi saepe quasi excepturi cupiditate
+                voluptate dolor sed obcaecati vero.
+              </p>
+            </li>
+            <li class="service">
+              <svg
+                width="27"
+                height="24"
+                viewBox="0 0 27 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M19.7156 14.1516C19.4931 14.1516 19.2756 14.0856 19.0906 13.962C18.9056 13.8384 18.7614 13.6627 18.6763 13.4571C18.5911 13.2516 18.5688 13.0254 18.6122 12.8071C18.6556 12.5889 18.7628 12.3885 18.9201 12.2311C19.0775 12.0738 19.2779 11.9666 19.4961 11.9232C19.7144 11.8798 19.9406 11.9021 20.1461 11.9873C20.3517 12.0724 20.5274 12.2166 20.651 12.4016C20.7746 12.5866 20.8406 12.8041 20.8406 13.0266C20.8406 13.325 20.7221 13.6111 20.5111 13.8221C20.3001 14.0331 20.014 14.1516 19.7156 14.1516ZM7.28906 14.1516C7.06656 14.1516 6.84905 14.0856 6.66405 13.962C6.47904 13.8384 6.33485 13.6627 6.2497 13.4571C6.16455 13.2516 6.14227 13.0254 6.18568 12.8071C6.22909 12.5889 6.33623 12.3885 6.49357 12.2311C6.6509 12.0738 6.85136 11.9666 7.06959 11.9232C7.28781 11.8798 7.51401 11.9021 7.71958 11.9873C7.92515 12.0724 8.10085 12.2166 8.22447 12.4016C8.34808 12.5866 8.41406 12.8041 8.41406 13.0266C8.41406 13.325 8.29554 13.6111 8.08456 13.8221C7.87358 14.0331 7.58743 14.1516 7.28906 14.1516ZM20.1188 7.37818L22.3641 3.48756C22.398 3.4342 22.4208 3.37454 22.431 3.31216C22.4413 3.24978 22.4388 3.18597 22.4238 3.12456C22.4087 3.06316 22.3814 3.00543 22.3435 2.95485C22.3056 2.90428 22.2578 2.86189 22.2031 2.83026C22.1483 2.79862 22.0878 2.77838 22.025 2.77075C21.9622 2.76313 21.8986 2.76828 21.8379 2.7859C21.7772 2.80351 21.7206 2.83322 21.6717 2.87325C21.6228 2.91328 21.5824 2.96279 21.5531 3.01881L19.2797 6.96099C17.4619 6.14572 15.4922 5.72424 13.5 5.72424C11.5078 5.72424 9.53808 6.14572 7.72031 6.96099L5.44687 3.02349C5.41757 2.96748 5.37724 2.91796 5.3283 2.87794C5.27937 2.83791 5.22284 2.8082 5.16213 2.79058C5.10141 2.77297 5.03776 2.76782 4.975 2.77544C4.91224 2.78307 4.85167 2.8033 4.79694 2.83494C4.74221 2.86658 4.69444 2.90896 4.65651 2.95954C4.61858 3.01012 4.59127 3.06785 4.57623 3.12925C4.56119 3.19066 4.55873 3.25447 4.56899 3.31685C4.57925 3.37923 4.60202 3.43889 4.63594 3.49224L6.88125 7.38287C3.02344 9.47818 0.384375 13.3876 0 18.0001H27C26.6156 13.3829 23.9766 9.47818 20.1141 7.37818"
+                  fill="black"
+                />
+              </svg>
+              <h4 class="h4">web design</h4>
+              <div class="dec-line"></div>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Voluptates corrupti animi saepe quasi excepturi cupiditate
+                voluptate dolor sed obcaecati vero.
+              </p>
+            </li>
+            <li class="service">
+              <svg
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <g clip-path="url(#clip0_22_247)">
+                  <path
+                    d="M5.47033 1.58437C5.68127 1.29844 6.01877 1.125 6.37502 1.125H17.625C17.9813 1.125 18.3188 1.29375 18.5297 1.58437L23.7797 8.70938C24.0985 9.14062 24.0656 9.73594 23.7094 10.1344L12.8344 22.1344C12.6235 22.3688 12.3188 22.5047 12 22.5047C11.6813 22.5047 11.3813 22.3688 11.1656 22.1344L0.290642 10.1344C-0.070295 9.73594 -0.09842 9.14062 0.22033 8.70938L5.47033 1.58437ZM7.27502 3.45C7.12033 3.56719 7.07814 3.77812 7.17658 3.94219L9.86721 8.42344L2.96721 9C2.77502 9.01406 2.62502 9.17813 2.62502 9.375C2.62502 9.57187 2.77502 9.73125 2.96721 9.75L11.9672 10.5C11.986 10.5 12.0094 10.5 12.0281 10.5L21.0281 9.75C21.2203 9.73594 21.3703 9.57187 21.3703 9.375C21.3703 9.17813 21.2203 9.01875 21.0281 9L14.1328 8.42813L16.8235 3.94687C16.9219 3.78281 16.8797 3.56719 16.725 3.45469C16.5703 3.34219 16.3547 3.36094 16.2235 3.50156L12 8.07187L7.77658 3.49687C7.64533 3.35625 7.42971 3.3375 7.27502 3.45Z"
+                    fill="black"
+                  />
+                </g>
+                <defs>
+                  <clipPath id="clip0_22_247">
+                    <rect width="24" height="24" fill="white" />
+                  </clipPath>
+                </defs>
+              </svg>
+              <h4 class="h4">app design</h4>
+              <div class="dec-line"></div>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Voluptates corrupti animi saepe quasi excepturi cupiditate
+                voluptate dolor sed obcaecati vero.
+              </p>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container">
+          <h2 class="h2"></h2>
+          <div class="dec-line"></div>
+          <p></p>
+          <ul class="work-list">
+            <li>
+              <img src="images/project-1.jpeg" />
+              <div class="work-content">
+                <h4 class="h4">project title</h4>
+                <p>client name</p>
+              </div>
+            </li>
+            <li>
+              <img src="images/project-2.jpeg" />
+              <div class="work-content">
+                <h4 class="h4">project title</h4>
+                <p>client name</p>
+              </div>
+            </li>
+            <li>
+              <img src="images/project-3.jpeg" />
+              <div class="work-content">
+                <h4 class="h4">project title</h4>
+                <p>client name</p>
+              </div>
+            </li>
+            <li>
+              <img src="images/project-4.jpeg" />
+              <div class="work-content">
+                <h4 class="h4">project title</h4>
+                <p>client name</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container">
+          <div class="img-container"></div>
+          <div class="contact">
+            <h2 class="h2">let's get in touch</h2>
+            <div class="dec-line"></div>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni
+              ratione perferendis exercitationem sit. Beatae eius commodi
+              officiis rem soluta ratione dignissimos quisquam tempore
+              laudantium, porro vitae cupiditate dicta magni quas corrupti
+              aperiam, rerum minus odio totam repellendus delectus nostrum
+              veniam!
+            </p>
+            <a href="#" class="btn">contact me</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container"></div>
+        <h2 class="h2">skills</h2>
+        <div class="dec-line"></div>
+        <div class="skills grid grid-2-cols">
+          <h3 class="h3">front end</h3>
+          <ul class="skills-list">
+            <li class="skill">
+              <div class="skill-content" data-progress="50%">
+                <p>HTML/CSS</p>
+                <p>50%</p>
+              </div>
+              <div class="progress-base">
+                <div class="progress" data-progress="50%"></div>
+              </div>
+            </li>
+            <li class="skill">
+              <div class="skill-content" data-progress="70%">
+                <p>Javascript</p>
+                <p>70%</p>
+              </div>
+              <div class="progress-base">
+                <div class="progress" data-progress="70%"></div>
+              </div>
+            </li>
+            <li class="skill">
+              <div class="skill-content" data-progress="80%">
+                <p>React</p>
+                <p>80%</p>
+              </div>
+              <div class="progress-base">
+                <div class="progress" data-progress="80%"></div>
+              </div>
+            </li>
+          </ul>
+          <h3 class="h3">back end</h3>
+          <ul class="skills-list">
+            <li class="skill">
+              <div class="skill-content" data-progress="50%">
+                <p>Node</p>
+                <p>50%</p>
+              </div>
+              <div class="progress-base">
+                <div class="progress" data-progress="50%"></div>
+              </div>
+            </li>
+            <li class="skill">
+              <div class="skill-content" data-progress="70%">
+                <p>PHP</p>
+                <p>70%</p>
+              </div>
+              <div class="progress-base">
+                <div class="progress" data-progress="70%"></div>
+              </div>
+            </li>
+            <li class="skill">
+              <div class="skill-content" data-progress="80%">
+                <p>Python</p>
+                <p>80%</p>
+              </div>
+              <div class="progress-base">
+                <div class="progress" data-progress="80%"></div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container">
+          <h2 class="h2">timeline</h2>
+          <div class="dec-line"></div>
+          <ul class="timeline">
+            <li class="time-point first">
+              <h4 class="h4">2020</h4>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione
+                consequuntur voluptates tempore numquam? Quidem incidunt fugit
+                quasi autem, ea excepturi.
+              </p>
+            </li>
+            <li class="time-point left">
+              <h4 class="h4">2019</h4>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione
+                consequuntur voluptates tempore numquam? Quidem incidunt fugit
+                quasi autem, ea excepturi.
+              </p>
+            </li>
+            <li class="time-point right">
+              <h4 class="h4">2018</h4>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione
+                consequuntur voluptates tempore numquam? Quidem incidunt fugit
+                quasi autem, ea excepturi.
+              </p>
+            </li>
+            <li class="time-point left">
+              <h4 class="h4">2017</h4>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione
+                consequuntur voluptates tempore numquam? Quidem incidunt fugit
+                quasi autem, ea excepturi.
+              </p>
+            </li>
+            <li class="time-point right">
+              <h4 class="h4">2016</h4>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione
+                consequuntur voluptates tempore numquam? Quidem incidunt fugit
+                quasi autem, ea excepturi.
+              </p>
+            </li>
+            <li class="time-point last">
+              <h4 class="h4">2015</h4>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione
+                consequuntur voluptates tempore numquam? Quidem incidunt fugit
+                quasi autem, ea excepturi.
+              </p>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container grid grid-3-cols">
+          <ul class="blog-posts">
+            <li class="post">
+              <div class="img">
+                <img src="images/project-1.jpeg" />
+              </div>
+              <h3 class="h3">Article Title</h3>
+              <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Et
+                nisi ut a est eum tempora dolorum temporibus voluptatibus!
+                Natus, provident.
+              </p>
+              <div class="post-detailes">
+                <div class="post-img">
+                  <img src="images/hero-img-small.jpeg" />
+                  <p class="reading-time">7 min read</p>
+                </div>
+              </div>
+            </li>
+            <li class="post">
+              <div class="img">
+                <img src="images/project-1.jpeg" />
+              </div>
+              <h3 class="h3">Article Title</h3>
+              <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Et
+                nisi ut a est eum tempora dolorum temporibus voluptatibus!
+                Natus, provident.
+              </p>
+              <div class="post-detailes">
+                <div class="post-img">
+                  <img src="images/hero-img-small.jpeg" />
+                  <p class="reading-time">7 min read</p>
+                </div>
+              </div>
+            </li>
+            <li class="post">
+              <div class="img">
+                <img src="images/project-1.jpeg" />
+              </div>
+              <h3 class="h3">Article Title</h3>
+              <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Et
+                nisi ut a est eum tempora dolorum temporibus voluptatibus!
+                Natus, provident.
+              </p>
+              <div class="post-detailes">
+                <div class="post-img">
+                  <img src="images/hero-img-small.jpeg" />
+                  <p class="reading-time">7 min read</p>
+                </div>
+              </div>
+            </li>
+            <li class="post">
+              <div class="img">
+                <img src="images/project-1.jpeg" />
+              </div>
+              <h3 class="h3">Article Title</h3>
+              <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Et
+                nisi ut a est eum tempora dolorum temporibus voluptatibus!
+                Natus, provident.
+              </p>
+              <div class="post-detailes">
+                <div class="post-img">
+                  <img src="images/hero-img-small.jpeg" />
+                  <p class="reading-time">7 min read</p>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+
+    <footer class="section">
+      <div class="container">
+        <ul class="social-list">
+          <li>
+            <a href="#" class="social-link"
+              ><svg
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <g clip-path="url(#clip0_20_184)">
+                  <path
+                    d="M24 12C24 5.37188 18.6281 0 12 0C5.37188 0 0 5.37188 0 12C0 17.625 3.87656 22.35 9.10312 23.6484V15.6656H6.62812V12H9.10312V10.4203C9.10312 6.3375 10.95 4.44375 14.9625 4.44375C15.7219 4.44375 17.0344 4.59375 17.5734 4.74375V8.0625C17.2922 8.03438 16.8 8.01562 16.1859 8.01562C14.2172 8.01562 13.4578 8.76094 13.4578 10.6969V12H17.3766L16.7016 15.6656H13.4531V23.9109C19.3969 23.1938 24 18.1359 24 12Z"
+                    fill="black"
+                  />
+                </g>
+                <defs>
+                  <clipPath id="clip0_20_184">
+                    <rect width="24" height="24" fill="white" />
+                  </clipPath>
+                </defs>
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="social-link"
+              ><svg
+                width="21"
+                height="24"
+                viewBox="0 0 21 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M19.5 1.5H1.49531C0.670312 1.5 0 2.17969 0 3.01406V20.9859C0 21.8203 0.670312 22.5 1.49531 22.5H19.5C20.325 22.5 21 21.8203 21 20.9859V3.01406C21 2.17969 20.325 1.5 19.5 1.5ZM6.34687 19.5H3.23438V9.47812H6.35156V19.5H6.34687ZM4.79062 8.10938C3.79219 8.10938 2.98594 7.29844 2.98594 6.30469C2.98594 5.31094 3.79219 4.5 4.79062 4.5C5.78437 4.5 6.59531 5.31094 6.59531 6.30469C6.59531 7.30312 5.78906 8.10938 4.79062 8.10938ZM18.0141 19.5H14.9016V14.625C14.9016 13.4625 14.8781 11.9672 13.2844 11.9672C11.6625 11.9672 11.4141 13.2328 11.4141 14.5406V19.5H8.30156V9.47812H11.2875V10.8469H11.3297C11.7469 10.0594 12.7641 9.22969 14.2781 9.22969C17.4281 9.22969 18.0141 11.3062 18.0141 14.0062V19.5Z"
+                  fill="black"
+                />
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="social-link"
+              ><svg
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <g clip-path="url(#clip0_20_185)">
+                  <path
+                    d="M8.72344 16.0922C8.26875 16.5469 8.26875 17.2781 8.72344 17.7281C9.17813 18.1828 9.90938 18.1828 10.3594 17.7281L17.7281 10.3641C18.6328 9.45937 20.1 9.45937 21.0047 10.3641C21.9094 11.2687 21.9094 12.7359 21.0047 13.6406L13.7812 20.8641C14.6859 21.7687 16.1484 21.7687 17.0531 20.8641L22.6453 15.2766C24.4547 13.4672 24.4547 10.5375 22.6453 8.72812C20.8359 6.91875 17.9016 6.91875 16.0969 8.72812L8.72812 16.0969L8.72344 16.0922ZM20.1844 11.1797C19.7297 10.725 18.9984 10.725 18.5484 11.1797L11.1797 18.5484C10.275 19.4531 8.8125 19.4531 7.90781 18.5531L7.90312 18.5484C7.45312 18.0984 6.71719 18.0937 6.26719 18.5484C5.8125 18.9984 5.8125 19.7344 6.26719 20.1844C8.07656 21.9937 11.0062 21.9937 12.8156 20.1844L20.1844 12.8156C20.6391 12.3609 20.6391 11.6297 20.1844 11.1797ZM7.90312 15.2719L15.2719 7.90312C15.7219 7.44843 15.7219 6.71718 15.2719 6.26718C14.8219 5.81718 14.0859 5.81718 13.6359 6.26718L6.26719 13.6359C5.3625 14.5406 3.89531 14.5406 2.99062 13.6359C2.08594 12.7312 2.08594 11.2687 2.99062 10.3641L10.2188 3.13593C9.31406 2.23125 7.84688 2.23125 6.94219 3.13593L1.35469 8.72343C-0.454688 10.5328 -0.454688 13.4625 1.35469 15.2719C3.16406 17.0812 6.09375 17.0812 7.90312 15.2719ZM3.81094 12.8156C4.26094 13.2656 4.99687 13.2656 5.44687 12.8156L12.8156 5.44687C13.7203 4.54218 15.1875 4.54218 16.0875 5.44687C16.5422 5.90156 17.2734 5.90156 17.7234 5.44687C18.1781 4.99218 18.1781 4.26093 17.7234 3.81093C15.9141 2.00156 12.9844 2.00156 11.175 3.81093L3.81094 11.1797C3.35625 11.6297 3.35625 12.3656 3.81094 12.8156Z"
+                    fill="black"
+                  />
+                </g>
+                <defs>
+                  <clipPath id="clip0_20_185">
+                    <rect width="24" height="24" fill="white" />
+                  </clipPath>
+                </defs>
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="social-link"
+              ><svg
+                width="27"
+                height="24"
+                viewBox="0 0 27 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M10.875 11.1187C12.3656 10.4062 13.1437 9.32811 13.1437 7.64999C13.1437 4.34061 10.6781 3.53436 7.83281 3.53436H0V20.1469H8.05313C11.0719 20.1469 13.9078 18.6984 13.9078 15.3234C13.9078 13.2375 12.9187 11.6953 10.875 11.1187ZM3.65156 6.3703H7.07812C8.39531 6.3703 9.58125 6.74061 9.58125 8.26874C9.58125 9.67968 8.65781 10.2469 7.35469 10.2469H3.65156V6.3703ZM7.55625 17.325H3.65156V12.75H7.63125C9.23906 12.75 10.2563 13.4203 10.2563 15.1219C10.2563 16.8 9.04219 17.325 7.55625 17.325ZM24.3609 6.04217H17.625V4.40624H24.3609V6.04217ZM27 14.3062C27 10.7484 24.9188 7.78124 21.1453 7.78124C17.4797 7.78124 14.9906 10.5375 14.9906 14.1469C14.9906 17.8922 17.3484 20.4609 21.1453 20.4609C24.0188 20.4609 25.8797 19.1672 26.775 16.4156H23.8594C23.5453 17.4422 22.2516 17.9859 21.2484 17.9859C19.3125 17.9859 18.2953 16.8516 18.2953 14.925H26.9719C26.9859 14.7281 27 14.5172 27 14.3062ZM18.3 12.8437C18.4078 11.2641 19.4578 10.275 21.0422 10.275C22.7016 10.275 23.5359 11.25 23.6766 12.8437H18.3Z"
+                  fill="black"
+                />
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a href="#"
+              ><svg
+                width="21"
+                height="24"
+                viewBox="0 0 21 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <g clip-path="url(#clip0_20_182)">
+                  <path
+                    d="M10.5047 6.60937C7.52344 6.60937 5.11875 9.01406 5.11875 11.9953C5.11875 14.9766 7.52344 17.3812 10.5047 17.3812C13.4859 17.3812 15.8906 14.9766 15.8906 11.9953C15.8906 9.01406 13.4859 6.60937 10.5047 6.60937ZM10.5047 15.4969C8.57813 15.4969 7.00313 13.9266 7.00313 11.9953C7.00313 10.0641 8.57344 8.49374 10.5047 8.49374C12.4359 8.49374 14.0063 10.0641 14.0063 11.9953C14.0063 13.9266 12.4313 15.4969 10.5047 15.4969ZM17.3672 6.38906C17.3672 7.08749 16.8047 7.64531 16.1109 7.64531C15.4125 7.64531 14.8547 7.08281 14.8547 6.38906C14.8547 5.69531 15.4172 5.13281 16.1109 5.13281C16.8047 5.13281 17.3672 5.69531 17.3672 6.38906ZM20.9344 7.66406C20.8547 5.98124 20.4703 4.49062 19.2375 3.26249C18.0094 2.03437 16.5188 1.64999 14.8359 1.56562C13.1016 1.46718 7.90313 1.46718 6.16875 1.56562C4.49063 1.64531 3 2.02968 1.76719 3.25781C0.534375 4.48593 0.154688 5.97656 0.0703129 7.65937C-0.0281246 9.39374 -0.0281246 14.5922 0.0703129 16.3266C0.15 18.0094 0.534375 19.5 1.76719 20.7281C3 21.9562 4.48594 22.3406 6.16875 22.425C7.90313 22.5234 13.1016 22.5234 14.8359 22.425C16.5188 22.3453 18.0094 21.9609 19.2375 20.7281C20.4656 19.5 20.85 18.0094 20.9344 16.3266C21.0328 14.5922 21.0328 9.39843 20.9344 7.66406ZM18.6938 18.1875C18.3281 19.1062 17.6203 19.8141 16.6969 20.1844C15.3141 20.7328 12.0328 20.6062 10.5047 20.6062C8.97656 20.6062 5.69063 20.7281 4.3125 20.1844C3.39375 19.8187 2.68594 19.1109 2.31563 18.1875C1.76719 16.8047 1.89375 13.5234 1.89375 11.9953C1.89375 10.4672 1.77188 7.18124 2.31563 5.80312C2.68125 4.88437 3.38906 4.17656 4.3125 3.80624C5.69531 3.25781 8.97656 3.38437 10.5047 3.38437C12.0328 3.38437 15.3188 3.26249 16.6969 3.80624C17.6156 4.17187 18.3234 4.87968 18.6938 5.80312C19.2422 7.18593 19.1156 10.4672 19.1156 11.9953C19.1156 13.5234 19.2422 16.8094 18.6938 18.1875Z"
+                    fill="black"
+                  />
+                </g>
+                <defs>
+                  <clipPath id="clip0_20_182">
+                    <rect width="21" height="24" fill="white" />
+                  </clipPath>
+                </defs>
+              </svg>
+            </a>
+          </li>
+        </ul>
+        <p>&copy; 2025 john doe. all rights reserved</p>
       </div>
-    </section>
+    </footer>
   </body>
 </html>
