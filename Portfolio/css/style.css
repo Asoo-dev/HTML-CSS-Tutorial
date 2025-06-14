@@ -627,9 +627,35 @@ a {
 }
 
 .post {
-  background-color: var(--CLR-White);
   border-radius: var(--BR-normal);
-  overflow: hidden;
+  position: relative;
+  perspective: 300rem;
+}
+
+.post-container {
+  background-color: var(--CLR-White);
+  backface-visibility: hidden;
+  transition: all 2s ease-out;
+}
+
+.backface {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--CLR-Primary-1);
+  backface-visibility: hidden;
+  transform: rotateY(-180deg);
+  transition: all 2s ease-out;
+}
+
+.post:hover .post-container {
+  transform: rotateY(180deg);
+}
+
+.post:hover .backface {
+  transform: rotateY(0);
 }
 
 .post-img {
