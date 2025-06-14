@@ -75,7 +75,8 @@
   --SP-xx-large: 8rem;
 
   /* Transition */
-  --transition: all 0.3s ease-out;
+  --transition-normal: all 0.3s linear;
+  --transition-long: all 1s linear;
 }
 
 *,
@@ -176,7 +177,7 @@ a {
   height: 4px;
   background-color: var(--CLR-Primary-4);
   border-radius: var(--BR-pill-circle);
-  transition: var(--transition);
+  transition: var(--transition-normal);
 }
 
 .dec-line.small {
@@ -191,7 +192,7 @@ a {
   border-radius: var(--BR-small);
   color: var(--CLR-Primary-5);
   text-transform: uppercase;
-  transition: var(--transition);
+  transition: var(--transition-normal);
 }
 
 .btn:hover,
@@ -241,7 +242,6 @@ a {
   position: fixed;
   width: 100%;
   z-index: 1000;
-  background-color: var(--CLR-White-40T);
 }
 
 .nav-flex {
@@ -261,7 +261,7 @@ a {
 }
 
 .nav-link {
-  transition: var(--transition);
+  transition: var(--transition-normal);
 }
 
 .nav-link:hover,
@@ -303,7 +303,7 @@ a {
 .social-icon {
   display: block;
   fill: var(--CLR-Gray-3);
-  transition: var(--transition);
+  transition: var(--transition-normal);
 }
 
 .social-icon:hover {
@@ -365,18 +365,18 @@ a {
   background-color: var(--CLR-White);
   padding: var(--SP-large) var(--SP-small);
   border-radius: var(--BR-normal);
-  transition: var(--transition);
+  transition: var(--transition-normal);
 }
 
 .service svg {
   height: 3.2rem;
   fill: var(--CLR-Gray-3);
-  transition: var(--transition);
+  transition: var(--transition-normal);
 }
 
 .h4 {
   font-size: var(--FS-small);
-  transition: var(--transition);
+  transition: var(--transition-normal);
 }
 
 .service:hover {
@@ -384,7 +384,7 @@ a {
   color: var(--CLR-White);
 }
 
-.service:hover h4 {
+.service:hover .h4 {
   color: var(--CLR-White);
 }
 
@@ -440,7 +440,7 @@ a {
   justify-content: center;
   gap: var(--SP-xxx-small);
   opacity: 0;
-  transition: var(--transition);
+  transition: var(--transition-normal);
 }
 
 .work-content::after {
@@ -449,7 +449,7 @@ a {
   inset: 0;
   border: var(--border-small) solid var(--CLR-White);
   border-radius: var(--BR-normal);
-  transition: var(--transition);
+  transition: var(--transition-normal);
 }
 
 .work-content:hover {
@@ -635,7 +635,7 @@ a {
 .post-container {
   background-color: var(--CLR-White);
   backface-visibility: hidden;
-  transition: all 2s ease-out;
+  transition: var(--transition-long);
 }
 
 .backface {
@@ -647,7 +647,7 @@ a {
   background-color: var(--CLR-Primary-1);
   backface-visibility: hidden;
   transform: rotateY(-180deg);
-  transition: all 2s ease-out;
+  transition: var(--transition-long);
 }
 
 .post:hover .post-container {
